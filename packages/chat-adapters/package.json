@@ -1,0 +1,24 @@
+{
+  "name": "@intelli-wha/chat-adapters",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "check": "tsc -p tsconfig.json --noEmit",
+    "lint": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run src --passWithNoTests"
+  },
+  "dependencies": {
+    "@intelli-wha/core": "workspace:*",
+    "@intelli-wha/chat-runtime": "workspace:*",
+    "@whiskeysockets/baileys": "^7.0.0-rc.9",
+    "grammy": "^1.42.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.5",
+    "vitest": "^4.1.5"
+  }
+}
